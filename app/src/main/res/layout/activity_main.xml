@@ -5,15 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3EDED"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/nameDelivery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World! My friend!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="42dp"
+        android:textColor="@color/black"
+        android:text="Smile Delivery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageDelivery"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/smile2"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/nameDelivery" />
+
+    <EditText
+        android:id="@+id/userDelivery"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageDelivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="140dp"
+        android:hint="Digite seu usuário"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/PasswordDelivery"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/userDelivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonDelivery"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFA500"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordDelivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="Entrar"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFA500"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDelivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="Cadastre-se"
+        android:textAlignment="center"/>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
